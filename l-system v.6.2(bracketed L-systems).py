@@ -7,23 +7,23 @@ WIDTH, HEIGHT = 1200, 800
 screen = turtle.Screen()
 screen.setup(WIDTH, HEIGHT)
 screen.screensize(1 * WIDTH, 1 * HEIGHT)
-screen.bgpic('moon.gif')
+screen.bgcolor('black')
 screen.delay(0)
 
 # turtle settings
 leo = turtle.Turtle()
 leo.pensize(3)
-leo.speed(0)
+leo.speed(1000)
 leo.penup()
 leo.setpos(WIDTH // 6, -HEIGHT // 4 - 25)
 leo.pendown()
 leo.color('green')
 
 # l-system settings
-gens = 13
+gens = 15
 axiom = 'XY'
 charcter_1, rule_1 = 'X', 'F[@[-X]+X]'
-step = 85
+step = 50
 angle = lambda: randint(0, 45)
 stack = []
 color = [0.35, 0.2, 0.0]

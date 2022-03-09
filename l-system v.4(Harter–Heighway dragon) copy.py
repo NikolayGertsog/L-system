@@ -13,7 +13,7 @@ screen.delay(0)
 leo = turtle.Turtle()
 leo.pensize(2)
 leo.speed(0)
-leo.setpos(-WIDTH // 4, -HEIGHT // 4 - 25)
+leo.setpos(0, -HEIGHT // 4 )
 leo.color('magenta')
 
 # l-system settings
